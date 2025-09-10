@@ -35,7 +35,7 @@ def show_news(request, id):
     news.increment_views()
 
     context = {
-        'news_list': news
+        'news': news
     }
 
     return render(request, "news_detail.html", context)
